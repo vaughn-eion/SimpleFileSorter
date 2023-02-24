@@ -11,4 +11,5 @@ for file in os.listdir(path):
     if not os.path.exists(f'{path}\\{ext[1:]}_files\\'):
         os.makedirs(f'{path}\\{ext[1:]}_files\\')
 
+    # Move files to the correct folder
     shutil.move(f'{path}\\{file}', f'{path}\\{ext[1:]}_files\\')
